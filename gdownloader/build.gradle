@@ -26,4 +26,18 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.philcalvin:com-phillipcalvin-iconbutton:1.1.0'
 }
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.2'
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:3.1.1"
+    }
+}
+
+// this script was used to upload files to bintray.
+apply from: 'https://raw.githubusercontent.com/msdx/gradle-publish/master/bintray.gradle'

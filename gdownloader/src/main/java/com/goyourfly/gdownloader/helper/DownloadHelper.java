@@ -43,9 +43,8 @@ public abstract class DownloadHelper {
     /**
      * 开始下载
      *
-     * @param url
-     * @param file
-     * @return
+     * @param url the download url
+     * @param file the download file path
      */
     public abstract void start(String url, File file, DownloadListener downloadListener);
 
@@ -56,8 +55,7 @@ public abstract class DownloadHelper {
     /**
      * 取消
      *
-     * @param url
-     * @return
+     * @param url the download url
      */
     public abstract boolean cancel(String url);
 
@@ -65,7 +63,7 @@ public abstract class DownloadHelper {
     /**
      * 暂停
      *
-     * @param url
+     * @param url the download url
      */
     public abstract boolean pause(String url);
 }
