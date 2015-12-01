@@ -16,7 +16,7 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity implements DownloadHelper.DownloadListener {
-    private String defaultUrl = "http://ml.crphdm.com/?app=sddownload&controller=sddownload&action=qrCodeDownload&bookid=152&userid=1375";
+    private String defaultUrl = "http://dlsw.baidu.com/sw-search-sp/soft/2a/25677/QQ_V4.0.5.1446465388.dmg";
     private String downloadingUrl;
     private String downloadPath = Environment.getExternalStorageDirectory().getPath() + "/DownloadTest/";
     private int runTask = 2;
