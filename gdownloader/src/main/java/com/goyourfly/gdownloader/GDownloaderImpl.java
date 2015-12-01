@@ -19,12 +19,12 @@ import java.util.List;
 /**
  * Created by gaoyf on 15/6/18.
  */
-public class DownloadModuleImpl extends DownloadModule {
+public class GDownloaderImpl extends GDownloader {
     private Context mContext;
     private DownloadHelper.DownloadListener mDownloadListener;
     private HashMap<String, Integer> transformerMap = new HashMap<>();
 
-    public DownloadModuleImpl(Context context, String path, int maxTask, @Nullable NameGenerator nameGenerator) {
+    public GDownloaderImpl(Context context, String path, int maxTask, @Nullable NameGenerator nameGenerator) {
         mContext = context;
         if(nameGenerator == null)
             nameGenerator = new HashCodeNameGenerator();

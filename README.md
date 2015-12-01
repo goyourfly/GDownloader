@@ -6,29 +6,29 @@
 
 
 ### JCenter:
-    compile 'com.goyourfly:GDownloader:1.0.0'    
+    compile 'com.goyourfly:GDownloader:1.1.0'    
 
 ### Get Start：
 - Init:
 
-	`DownloadModule.init(context,path,maxTask,NameGenerator);`
-	`DownloadModule.getInstance().registerListener(DownloadListener);`
+	`GDownloader.init(context,path,maxTask,NameGenerator);`
+	`GDownloader.getInstance().registerListener(DownloadListener);`
 
 - Start
 
-	`DownloadModule.download(url);`
+	`GDownloader.download(url);`
 
 - Pause
 
-	`DownloadModule.pause(url);`
+	`GDownloader.pause(url);`
 
 - Cancel
 
-	`DownloadModule.cancel(url);`
+	`GDownloader.cancel(url);`
 
 - Shutdown
 
-	`DownloadModule.shutdown();`
+	`GDownloader.shutdown();`
 
 
 - Callback

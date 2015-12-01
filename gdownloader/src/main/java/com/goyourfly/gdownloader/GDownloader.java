@@ -15,19 +15,19 @@ import java.util.List;
 /**
  * Created by gaoyf on 15/6/18.
  */
-public abstract class DownloadModule {
+public abstract class GDownloader {
 
-    private static DownloadModule mImpl;
+    private static GDownloader mImpl;
 
-    public static synchronized DownloadModule getInstance() {
+    public static synchronized GDownloader getInstance() {
         if (mImpl == null)
             throw new NullPointerException("Please call init before getInstance()");
         return mImpl;
     }
 
-    public static synchronized DownloadModule init(Context context, String downloadPath, int maxTask, @Nullable NameGenerator nameGenerator) {
+    public static synchronized GDownloader init(Context context, String downloadPath, int maxTask, @Nullable NameGenerator nameGenerator) {
         if (mImpl == null)
-            mImpl = new DownloadModuleImpl(context, downloadPath, maxTask, nameGenerator);
+            mImpl = new GDownloaderImpl(context, downloadPath, maxTask, nameGenerator);
         return mImpl;
     }
 
