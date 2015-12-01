@@ -1,20 +1,20 @@
 ### A download manager for android
-> It is easy to used for download large file
+> It is easy to used for download large file, you don't need to care about how the thread and io.
 
 ### Display：
 ![Display](https://github.com/goyourfly/GDownloader/blob/master/art/art.gif)
 
 
 ### JCenter:
-    compile 'com.goyourfly:gdownloader:1.0.0'    
+    compile 'com.goyourfly:GDownloader:1.0.0'    
 
-### How to use：
+### Get Start：
 - Init:
 
 	`DownloadModule.init(context,path,maxTask,NameGenerator);`
 	`DownloadModule.getInstance().registerListener(DownloadListener);`
 
-- Start to download
+- Start
 
 	`DownloadModule.download(url);`
 
@@ -51,4 +51,6 @@
     	    public void onError(String url, String err);
     	}
 
- 
+- Custom NameGenerator
+	
+	We provide the default name generator `HashCodeNameGenerator`,if you want to custom NameGenerator, you need implement class NameGenerator and override the `getName` function. 
